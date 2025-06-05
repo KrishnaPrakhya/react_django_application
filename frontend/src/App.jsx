@@ -3,7 +3,7 @@ import { SignIn, SignUp, SignedIn, SignedOut } from "@clerk/clerk-react";
 import Home from "./components/Home";
 import Dashboard from "./components/dashboard";
 import Navbar from "./components/navbar";
-import ItemTest from "./components/ItemTest";
+import Apartments from "./components/Apartments";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
             </div>
           }
         />
-        <Route path="/item" element={<ItemTest />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/apartments" element={<Apartments />} />
       </Routes>
     </div>
   );

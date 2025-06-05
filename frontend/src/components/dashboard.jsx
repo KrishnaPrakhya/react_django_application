@@ -9,19 +9,9 @@ function Dashboard() {
     return <Navigate to="/" replace />;
   }
 
-  return (
-    <div>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-      <h1>hiii</h1>
-    </div>
-  );
+  return <div>
+    
+  </div>;
 }
 
 export default Dashboard;

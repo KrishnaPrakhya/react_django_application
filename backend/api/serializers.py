@@ -1,9 +1,10 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from .models import Item
+from .models import  Apartment
 
-class ItemSerializer(serializers.ModelSerializer):
+
+class ApartmentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Item
-        fields = ['id', 'name', 'description', 'created_at', 'updated_at']
-        read_only_fields = ['id', 'created_at', 'updated_at']
+        model = Apartment
+        fields = ['id', 'city', 'rent', 'bedrooms', 'description', 'posted_date']
+        read_only_fields = ['id', 'posted_date']

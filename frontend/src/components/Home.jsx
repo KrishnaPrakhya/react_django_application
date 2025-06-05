@@ -5,16 +5,17 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col justify-center items-center">
-      <div>
-        <h1>REACT-DJANGO APPLICATION</h1>
+      <div className="mt-20">
+        <Typography variant="h4">Apartments Filtering Application</Typography>
       </div>
-      <div>
-        <button
-          onClick={() => navigate("/dashboard")}
+      <div className="mt-20">
+        <Button
+          onClick={() => navigate("/apartments")}
+          variant="contained"
           className="cursor-pointer "
         >
-          Lets get started
-        </button>
+          Get Started
+        </Button>
       </div>
     </div>
   );

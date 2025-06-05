@@ -1,12 +1,18 @@
 import React from "react";
 import { SignIn, SignUp, UserButton, useUser } from "@clerk/clerk-react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const { isSignedIn } = useUser();
-
+  const navigate = useNavigate();
   return (
     <nav className="flex justify-between items-center p-4 border-b">
-      <div className="text-xl font-bold">MyApp</div>
+      <div
+        onClick={() => navigate("/")}
+        className="text-xl font-bold cursor-pointer"
+      >
+        MyApp
+      </div>
       <div>
         {isSignedIn ? (
           <UserButton afterSignOutUrl="/" />
